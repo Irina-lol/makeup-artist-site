@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Визажист Оксана</title>
   <link rel="stylesheet" href="viza.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -25,10 +26,13 @@
   <section id="portfolio">
     <h2>Портфолио</h2>
     <div class="gallery">
-      <img src="makeup_images/gallery1.jpg" alt="Работа 1">
-      <img src="makeup_images/gallery2.jpg" alt="Работа 2">
-      <img src="makeup_images/gallery3.jpg" alt="Работа 3">
-    </div>
+        <a href="makeup_images/gallery1.jpg" data-lightbox="portfolio" data-title="Описание фото 1">
+          <img src="makeup_images/gallery1.jpg" alt="Работа 1">
+        </a>
+        <a href="makeup_images/gallery2.jpg" data-lightbox="portfolio" data-title="Описание фото 2">
+          <img src="makeup_images/gallery2.jpg" alt="Работа 2">
+        </a>
+      </div>
   </section>
 
   <section id="about">
@@ -39,10 +43,14 @@
 
   <section id="reviews">
     <h2>Отзывы</h2>
-    <blockquote>
-      <p>"Отличный мастер! Все было сделано быстро и качественно."</p>
-      <cite>— Имя Клиента</cite>
-    </blockquote>
+    <div class="review-card">
+      <p>"Очень довольна работой! Все было сделано быстро и качественно."</p>
+      <cite>— Ирина</cite>
+    </div>
+    <div class="review-card">
+      <p>"Спасибо за прекрасный макияж! Я выглядела идеально на своей свадьбе."</p>
+      <cite>— Анна</cite>
+    </div>
   </section>
 
   <footer id="contacts">
@@ -51,5 +59,6 @@
     <p>Email: Oksana42rus.ru@yandex.ru</p>
     <p>Vkontakte: https://vk.com/id140353184</p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
