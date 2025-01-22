@@ -7,7 +7,6 @@ body {
   color: #333;
 }
 
-/* Шапка */
 /* Анимация для форм */
 @keyframes float {
   0% {
@@ -91,20 +90,29 @@ header {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 200px; /* Увеличим размер */
+  height: 200px;
   border-radius: 50%;
+  border: 4px solid #ffffff; /* Белая рамка */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Тень */
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 36px;
+  font-family: 'Great Vibes', cursive; /* Подключаем шрифт */
+  font-size: 64px; /* Увеличим размер */
   margin: 10px 0;
+  color: #ffffff; /* Белый цвет */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+  letter-spacing: 2px; /* Добавим немного расстояния между буквами */
 }
 
 .quote {
-  font-style: italic;
-  font-size: 18px;
-  color: #e6e6fa; /* Светло-сиреневый */
+  font-style: italic; /* Курсив */
+  font-size: 24px; /* Увеличим размер */
+  color: #f0e6fa; /* Светло-сиреневый с розовым оттенком */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Легкая тень */
+  margin-top: 10px; /* Отступ сверху */
 }
 
 /* Секции */
