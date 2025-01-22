@@ -167,6 +167,21 @@ h2 {
   color: #8a2be2; /* Фиолетовый */
 }
 
+#show-portfolio {
+  background-color: #8a2be2; /* Фиолетовый цвет */
+  color: white; /* Белый текст */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#show-portfolio:hover {
+  background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
+}
+
 /* Галерея */
 /* Секция "Портфолио" */
 #portfolio {
@@ -186,7 +201,7 @@ h2 {
 
 
 .gallery {
-  display: flex;
+  display: none; /* Скрываем галерею по умолчанию */
   flex-wrap: wrap; /* Перенос фотографий на новую строку */
   justify-content: center; /* Центрируем фотографии */
   gap: 20px; /* Расстояние между фотографиями */
