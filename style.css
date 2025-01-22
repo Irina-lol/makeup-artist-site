@@ -1,3 +1,4 @@
+/* Общие стили */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Шапка */
 header {
   background-color: #8a2be2; /* Фиолетовый */
   color: white;
@@ -13,17 +15,24 @@ header {
   text-align: center;
 }
 
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 h1 {
   font-size: 36px;
   margin: 10px 0;
 }
 
-p.quote {
+.quote {
   font-style: italic;
   font-size: 18px;
   color: #e6e6fa; /* Светло-сиреневый */
 }
 
+/* Секции */
 section {
   padding: 20px;
   margin: 20px;
@@ -31,53 +40,22 @@ section {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-  
-  h2 {
-    color: #ff6f61;
-  }
-  
-  #services, #portfolio, #about, #reviews, #contacts {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .gallery {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
 
-  /* Добавим анимацию для кнопок (если они появятся) */
-button {
-  background-color: #ff6f61;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+h2 {
+  color: #8a2be2; /* Фиолетовый */
 }
 
-button:hover {
-  background-color: #ff3b2f;
+/* Галерея */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-/* Анимация для фотографий в портфолио */
 .gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -85,31 +63,26 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Отзывы */
 .review-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .review-card cite {
-    display: block;
-    margin-top: 10px;
-    font-style: normal;
-    color: #ff6f61;
-  }
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
-  @media (max-width: 768px) {
-    header h1 {
-      font-size: 24px;
-    }
-  
-    .gallery {
-      flex-direction: column;
-    }
-  
-    .gallery img {
-      max-width: 100%;
-    }
-  }
+.review-card cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: #8a2be2; /* Фиолетовый */
+}
+
+/* Футер */
+footer {
+  background-color: #8a2be2; /* Фиолетовый */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
