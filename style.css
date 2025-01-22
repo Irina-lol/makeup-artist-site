@@ -129,9 +129,12 @@ section {
   text-align: center; /* Выравниваем текст по центру */
   padding: 40px 20px; /* Добавим отступы */
   background-color: white; /* Белый фон */
-  border-radius: 10px; /* Закруглим углы */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  border-radius: 20px; /* Закруглим углы */
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3); /* Тень с фиолетовым оттенком */
   margin: 20px; /* Отступы вокруг секции */
+  border: 4px solid transparent; /* Прозрачная рамка */
+  background-clip: padding-box; /* Чтобы градиент не выходил за рамку */
+  position: relative;
 }
 
 #about h2 {
@@ -144,8 +147,20 @@ section {
   font-size: 20px; /* Увеличим размер текста */
   color: #333; /* Темно-серый цвет */
   line-height: 1.6; /* Увеличим межстрочный интервал */
-  max-width: 800px; /* Ограничим ширину текста */
+  max-width: 1200px; /* Ещё больше увеличим ширину текста */
   margin: 0 auto; /* Центрируем текст */
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(45deg, #8a2be2, #ff6f61); /* Градиентная рамка */
+  border-radius: 24px; /* Закругление углов */
+  z-index: -1;
 }
 
 h2 {
