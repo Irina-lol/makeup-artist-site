@@ -124,6 +124,30 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Секция "Обо мне" */
+#about {
+  text-align: center; /* Выравниваем текст по центру */
+  padding: 40px 20px; /* Добавим отступы */
+  background-color: white; /* Белый фон */
+  border-radius: 10px; /* Закруглим углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  margin: 20px; /* Отступы вокруг секции */
+}
+
+#about h2 {
+  font-size: 36px; /* Увеличим размер заголовка */
+  color: #8a2be2; /* Фиолетовый цвет */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+#about p {
+  font-size: 20px; /* Увеличим размер текста */
+  color: #333; /* Темно-серый цвет */
+  line-height: 1.6; /* Увеличим межстрочный интервал */
+  max-width: 800px; /* Ограничим ширину текста */
+  margin: 0 auto; /* Центрируем текст */
+}
+
 h2 {
   color: #8a2be2; /* Фиолетовый */
 }
