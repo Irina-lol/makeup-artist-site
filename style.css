@@ -182,8 +182,8 @@ h2 {
   background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
 }
 
+
 /* Галерея */
-/* Секция "Портфолио" */
 #portfolio {
   text-align: center; /* Выравниваем текст по центру */
   padding: 40px 20px; /* Добавим отступы */
@@ -276,8 +276,37 @@ h2 {
   font-size: 1.2em; /* Увеличиваем размер заголовка */
   text-align: center; /* Центрируем текст */
 }
+
 .skills-list p {
     font-size: 16px;
     color: #666;
     margin-top: 5px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Меняем направление на вертикальное */
+        gap: 20px; /* Уменьшаем расстояние между элементами */
+    }
+
+    .skills-image img {
+        max-width: 100%; /* Фото занимает всю ширину контейнера */
+    }
+
+    .skills-list {
+        max-width: 100%; /* Текст занимает всю ширину контейнера */
+    }
+
+    .skills-list h2 {
+        font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+    }
+
+    .skills-list li strong {
+        font-size: 1.1em; /* Уменьшаем размер заголовков навыков */
+    }
+
+    .skills-list p {
+        font-size: 14px; /* Уменьшаем размер текста для мобильных */
+    }
 }
