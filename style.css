@@ -310,3 +310,78 @@ h2 {
         font-size: 14px; /* Уменьшаем размер текста для мобильных */
     }
 }
+
+/* Секция "Прайс" */
+#services {
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center; /* Центрируем заголовок и содержимое */
+}
+
+#services h2 {
+  font-size: 36px;
+  color: #8a2be2; /* Фиолетовый цвет */
+  margin-bottom: 40px;
+}
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap; /* Переносим карточки на новую строку, если не хватает места */
+  justify-content: center; /* Центрируем карточки */
+  gap: 20px; /* Расстояние между карточками */
+}
+
+.price-item {
+  background-color: #f9f9f9; /* Светлый фон для карточки */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 20px;
+  width: 250px; /* Фиксированная ширина карточки */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.price-item:hover {
+  transform: translateY(-5px); /* Поднимаем карточку при наведении */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+}
+
+.price-item h3 {
+  font-size: 24px;
+  color: #333; /* Темно-серый цвет */
+  margin-bottom: 10px;
+}
+
+.price-item .price {
+  font-size: 20px;
+  color: #8a2be2; /* Фиолетовый цвет */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .price-list {
+    flex-direction: column; /* Карточки идут одна под другой */
+    align-items: center; /* Центрируем карточки */
+  }
+
+  .price-item {
+    width: 100%; /* Карточки занимают всю ширину */
+    max-width: 300px; /* Ограничиваем максимальную ширину */
+  }
+
+  #services h2 {
+    font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+  }
+
+  .price-item h3 {
+    font-size: 20px; /* Уменьшаем размер заголовка услуги */
+  }
+
+  .price-item .price {
+    font-size: 18px; /* Уменьшаем размер цены */
+  }
+}
