@@ -104,5 +104,21 @@ const menuToggle = document.getElementById('menu-toggle');
 const navUl = document.querySelector('#main-nav ul');
 
 menuToggle.addEventListener('click', () => {
+  navUl.classList.toggle('active'); // Добавляем или убираем класс .active
+});
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUl = document.querySelector('#main-nav ul');
+
+// Открытие/закрытие меню при клике на "бургер"
+menuToggle.addEventListener('click', () => {
   navUl.classList.toggle('active');
+});
+
+// Закрытие меню при клике вне его области
+document.addEventListener('click', (event) => {
+  const isClickInsideMenu = navUl.contains(event.target) || menuToggle.contains(event.target);
+  if (!isClickInsideMenu) {
+    navUl.classList.remove('active'); // Закрываем меню
+  }
 });
