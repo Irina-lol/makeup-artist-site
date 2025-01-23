@@ -10,17 +10,14 @@ document.getElementById('show-portfolio').addEventListener('click', function() {
   });
 
   const certificates = document.querySelectorAll('.certificate');
-
-const checkVisibility = () => {
-  certificates.forEach(certificate => {
-    const certificateTop = certificate.getBoundingClientRect().top;
-    const certificateBottom = certificate.getBoundingClientRect().bottom;
-    if (certificateTop < window.innerHeight && certificateBottom > 0) {
-      certificate.classList.add('visible');
+  document.getElementById('show-reviews').addEventListener('click', function() {
+    const reviewList = document.querySelector('.review-list');
+    if (reviewList.style.display === 'none' || reviewList.style.display === '') {
+      reviewList.style.display = 'flex';
+      this.textContent = 'Скрыть отзывы';
+    } else {
+      reviewList.style.display = 'none';
+      this.textContent = 'Посмотреть отзывы';
     }
   });
-};
-
-window.addEventListener('scroll', checkVisibility);
-window.addEventListener('load', checkVisibility);
   

@@ -486,19 +486,42 @@ h2 {
 #reviews h2 {
   font-size: 36px;
   color: #8a2be2; /* Фиолетовый цвет */
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+#show-reviews {
+  background-color: #8a2be2; /* Фиолетовый цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#show-reviews:hover {
+  background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
+  transform: translateY(-3px);
+}
+
+#show-reviews:active {
+  transform: translateY(0);
 }
 
 .review-list {
-  display: flex;
-  flex-wrap: wrap; /* Переносим карточки на новую строку, если не хватает места */
-  justify-content: center; /* Центрируем карточки */
-  gap: 20px; /* Расстояние между карточками */
+  display: none; /* Скрываем отзывы по умолчанию */
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  flex-wrap: wrap; /* Переносим отзывы на новую строку, если не хватает места */
+  justify-content: center; /* Центрируем отзывы */
+  gap: 20px; /* Расстояние между отзывами */
+  margin-top: 20px;
 }
 
 .review-card {
   background-color: #f9f9f9; /* Светлый фон для карточки */
-  border-radius: 10px; /* Закругленные углы */
+  border-radius: 10px;
   padding: 10px; /* Уменьшаем отступы внутри карточки */
   width: 300px; /* Ширина карточки */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
@@ -511,24 +534,33 @@ h2 {
 }
 
 .review-image {
-  width: 100%; 
-  border-radius: 10px; 
-  display: block; 
+  width: 100%; /* Фото занимает всю ширину карточки */
+  border-radius: 10px; /* Закругленные углы */
+  display: block; /* Убираем лишние отступы */
 }
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   #reviews {
-    padding: 20px 10px; 
-    margin: 10px; 
+    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
+    margin: 10px; /* Уменьшаем внешние отступы */
   }
 
   .review-card {
-    width: 100%; 
-    max-width: 300px; 
-    padding: 5px; 
+    width: 100%; /* Карточки занимают всю ширину */
+    max-width: 300px; /* Ограничиваем максимальную ширину */
+    padding: 5px; /* Уменьшаем отступы внутри карточки */
+  }
+
+  #reviews h2 {
+    font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+  }
+
+  #show-reviews {
+    font-size: 16px; /* Уменьшаем размер текста кнопки */
   }
 }
+
 /* Секция "Контакты" */
 
 #contacts {
@@ -541,6 +573,7 @@ h2 {
 }
 
 #contacts h2 {
+  color: white;
   font-size: 36px;
   margin-bottom: 40px;
 }
