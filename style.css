@@ -376,7 +376,7 @@ h2 {
   }
 
   .price-item {
-    width: 55%; /* Карточки занимают всю ширину */
+    width: 80%; /* Карточки занимают всю ширину */
     max-width: 300px; /* Ограничиваем максимальную ширину */
     padding: 15px; /* Уменьшаем отступы внутри карточки */
   }
@@ -601,6 +601,20 @@ h2 {
   box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3); /* Увеличиваем тень */
 }
 
+/* Анимация для кнопок */
+.contact-button, #show-portfolio, #show-reviews {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover, #show-portfolio:hover, #show-reviews:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:active, #show-portfolio:active, #show-reviews:active {
+  transform: translateY(0);
+}
+
 /* Цвета для кнопок */
 
 .contact-buttons {
@@ -666,5 +680,38 @@ h2 {
 
   .contact-button span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 48px; /* Уменьшим размер заголовка для мобильных */
+  }
+
+  .quote {
+    font-size: 18px; /* Уменьшим размер цитаты */
+  }
+
+  .profile-photo {
+    width: 150px; /* Уменьшим размер фото */
+    height: 150px;
+  }
+
+  section {
+    padding: 15px; /* Уменьшим отступы внутри секций */
+    margin: 10px; /* Уменьшим внешние отступы */
+  }
+
+  .gallery img {
+    max-width: 100%; /* Фото занимают всю ширину */
+  }
+
+  .contact-buttons {
+    flex-direction: column; /* Кнопки идут одна под другой */
+  }
+
+  .contact-button {
+    width: 100%; /* Кнопки занимают всю ширину */
+    margin-bottom: 10px; /* Отступ между кнопками */
   }
 }
