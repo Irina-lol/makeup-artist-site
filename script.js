@@ -8,3 +8,4 @@ document.getElementById('show-portfolio').addEventListener('click', function() {
       this.textContent = 'Показать портфолио'; // Меняем текст кнопки
     }
   });
+  

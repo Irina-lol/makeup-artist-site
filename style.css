@@ -432,78 +432,127 @@ h2 {
 }
 
 .review-image {
-  width: 100%; /* Фото занимает всю ширину карточки */
-  border-radius: 10px; /* Закругленные углы */
-  display: block; /* Убираем лишние отступы */
+  width: 100%; 
+  border-radius: 10px; 
+  display: block; 
 }
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   #reviews {
-    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
-    margin: 10px; /* Уменьшаем внешние отступы */
+    padding: 20px 10px; 
+    margin: 10px; 
   }
 
   .review-card {
-    width: 100%; /* Карточки занимают всю ширину */
-    max-width: 300px; /* Ограничиваем максимальную ширину */
-    padding: 5px; /* Уменьшаем отступы внутри карточки */
+    width: 100%; 
+    max-width: 300px; 
+    padding: 5px; 
   }
 }
 /* Секция "Контакты" */
+
 #contacts {
   padding: 40px 20px;
-  background-color: #8a2be2; /* Фиолетовый фон */
+  background-color: #8a2be2; 
   color: white;
-  text-align: center; /* Центрируем заголовок и содержимое */
+  text-align: center;
   border-radius: 10px;
   margin: 20px;
 }
 
 #contacts h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.contact-info {
-  max-width: 600px; /* Ограничиваем ширину контента */
-  margin: 0 auto; /* Центрируем контент */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Переносим кнопки на новую строку, если не хватает места */
+  justify-content: center; /* Центрируем кнопки */
+  gap: 20px; /* Расстояние между кнопками */
 }
 
-.contact-info p {
-  font-size: 18px;
-  margin: 10px 0;
+.contact-button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-info a {
-  color: white; /* Белый цвет для ссылок */
-  text-decoration: none; /* Убираем подчеркивание */
-  transition: color 0.3s ease;
+.contact-button:hover {
+  transform: translateY(-5px); /* Поднимаем кнопку при наведении */
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3); /* Увеличиваем тень */
 }
 
-.contact-info a:hover {
-  color: #f0e6fa; /* Светло-сиреневый при наведении */
+/* Цвета для кнопок */
+
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Адаптивность для мобильных устройств */
+.contact-button {
+  display: flex;
+  align-items: center;
+  background-color: #8a2be2;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+}
+
+.contact-button i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-button span {
+  font-size: 16px;
+}
+
+.contact-button.whatsapp {
+  background-color: #6a1b9a;
+}
+
+.contact-button.vk {
+  background-color: #6a1b9a;
+}
+
+.contact-button.instagram {
+  background-color: #6a1b9a;
+}
+
+.contact-button.email {
+  background-color: #6a1b9a;
+}
+
 @media (max-width: 768px) {
-  #reviews {
-    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
-    margin: 10px; /* Уменьшаем внешние отступы */
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
-  .review-card {
-    width: 100%; /* Карточки занимают всю ширину */
-    max-width: 300px; /* Ограничиваем максимальную ширину */
-    padding: 15px; /* Уменьшаем отступы внутри карточки */
+  .contact-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
   }
 
-  #contacts {
-    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
-    margin: 10px; /* Уменьшаем внешние отступы */
-  }
-
-  .contact-info p {
-    font-size: 16px; /* Уменьшаем размер текста */
+  .contact-button span {
+    font-size: 14px;
   }
 }
