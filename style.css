@@ -394,6 +394,85 @@ h2 {
   }
 }
 
+/* Секция "Сертификаты" */
+#certificates {
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  text-align: center;
+}
+
+#certificates h2 {
+  font-size: 36px;
+  color: #8a2be2;
+  margin-bottom: 40px;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.certificate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.certificate p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .certificate {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  #certificates h2 {
+    font-size: 28px;
+  }
+
+  .certificate p {
+    font-size: 14px;
+  }
+}
+
 /* Секция "Отзывы" */
 #reviews {
   padding: 40px 20px;

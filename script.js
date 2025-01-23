@@ -8,4 +8,19 @@ document.getElementById('show-portfolio').addEventListener('click', function() {
       this.textContent = 'Показать портфолио'; // Меняем текст кнопки
     }
   });
+
+  const certificates = document.querySelectorAll('.certificate');
+
+const checkVisibility = () => {
+  certificates.forEach(certificate => {
+    const certificateTop = certificate.getBoundingClientRect().top;
+    const certificateBottom = certificate.getBoundingClientRect().bottom;
+    if (certificateTop < window.innerHeight && certificateBottom > 0) {
+      certificate.classList.add('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
   
