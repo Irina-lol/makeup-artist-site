@@ -69,11 +69,40 @@ document.querySelectorAll('.gallery img').forEach(image => {
 });
 
 // Плавная прокрутка к секциям
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('#main-nav a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
+    const targetId = this.getAttribute('href');
+    document.querySelector(targetId).scrollIntoView({
       behavior: 'smooth'
     });
   });
+});
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('#main-nav a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUl = document.querySelector('#main-nav ul');
+
+menuToggle.addEventListener('click', () => {
+  navUl.classList.toggle('active');
 });
