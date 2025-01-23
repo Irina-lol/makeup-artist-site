@@ -459,7 +459,7 @@ h2 {
   }
 
   .certificate {
-    width: 100%;
+    width: 80%;
     max-width: 300px;
     padding: 15px;
   }
@@ -626,7 +626,7 @@ h2 {
   }
 
   .contact-button {
-    width: 100%;
+    width: 80%;
     max-width: 300px;
     padding: 10px 15px;
   }
