@@ -1,0 +1,18 @@
+{
+    "name": "my-webpack-project",
+    "version": "1.0.0",
+    "description": "A simple project using Webpack",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.26.8",
+        "@babel/preset-env": "^7.26.8",
+        "babel-loader": "^9.2.1",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^6.0.1"
+    }
+}
