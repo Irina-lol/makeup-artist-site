@@ -4,7 +4,8 @@
     "description": "A simple project using Webpack",
     "main": "index.js",
     "scripts": {
-        "build": "webpack"
+        "start": "webpack serve --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js"
     },
     "author": "",
     "license": "ISC",
@@ -12,7 +13,12 @@
         "@babel/core": "^7.26.8",
         "@babel/preset-env": "^7.26.8",
         "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.6.3",
+        "style-loader": "^4.0.0",
         "webpack": "^5.97.1",
-        "webpack-cli": "^6.0.1"
+        "webpack-cli": "^4.0.0",
+        "webpack-dev-server": "^4.0.0"
     }
 }

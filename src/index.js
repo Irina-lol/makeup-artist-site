@@ -1,1 +1,18 @@
-console.log('Hello, Webpack!')
+import '../style.css';
+import '../script.js';
+import image1 from '../gall1.jpg';
+import image2 from '../gall4.jpg';
+import image3 from '../gall5.jpg';
+import image4 from '../gall6.jpg';
+import image5 from '../gall7.jpg';
+import image6 from '../gall8.jpg';
+import image7 from '../gallery2.jpg';
+import image8 from '../gallery3.jpg';
+import image9 from '../otz1.jpg';
+import image10 from '../otz2.jpg';
+import image11 from '../otz3.jpg';
+import image12 from '../photoVzOk.jpg';
+import image13 from '../photoVzOk2.jpg';
+import image14 from '../ser1.jpg';
+import image15 from '../ser2.jpg';
+console.log('HMR is working!');

@@ -1,13 +1,11 @@
-/* Общие стили */
 body {
   font-family: 'Arial', sans-serif;
-  margin: 0;
+| margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
 }
 
-/* Анимация для форм */
 @keyframes float {
   0% {
     transform: translateY(0) rotate(0deg);
@@ -57,15 +55,14 @@ body {
   }
 }
 
-/* Стили для навигационного меню */
 #main-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(138, 43, 226, 0.9); /* Фиолетовый с прозрачностью */
-  -webkit-backdrop-filter: blur(10px); /* Поддержка Safari и iOS */
-  backdrop-filter: blur(10px); /* Стандартное свойство */
+  background-color: rgba(138, 43, 226, 0.9); 
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -100,35 +97,35 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 768px) {
   #menu-toggle {
-    display: block; /* Показываем кнопку "бургер" */
+    display: block; 
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 1001; /* Убедимся, что кнопка поверх меню */
+    z-index: 1001;
   }
 
   #main-nav ul {
-    display: none; /* Меню скрыто по умолчанию */
+    display: none; 
     flex-direction: column;
     background-color: rgba(138, 43, 226, 0.9);
     position: fixed;
-    top: 50px; /* Отступ сверху, чтобы не перекрывать кнопку "бургер" */
+    top: 50px; 
     left: 0;
     width: 100%;
     padding: 10px;
-    z-index: 1000; /* Убедимся, что меню поверх контента */
+    z-index: 1000;
   }
 
   #main-nav ul.active {
-    display: flex; /* Показываем меню при добавлении класса .active */
+    display: flex; 
   }
 }
 
 header {
-  background-color: #8a2be2; /* Фиолетовый */
+  background-color: #8a2be2; 
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -147,12 +144,12 @@ header {
 
 .brush, .palette {
   position: absolute;
-  opacity: 0.2; /* Прозрачность */
+  opacity: 0.2; 
 }
 
 .brush, .palette, .flower {
   position: absolute;
-  opacity: 0.5; /* Прозрачность */
+  opacity: 0.5; 
   animation: float 6s infinite ease-in-out;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
 }
@@ -194,32 +191,31 @@ header {
 }
 
 .profile-photo {
-  width: 200px; /* Увеличим размер */
+  width: 200px; 
   height: 200px;
   border-radius: 50%;
-  border: 4px solid #ffffff; /* Белая рамка */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Тень */
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
   margin-bottom: 20px;
 }
 
 h1 {
-  font-family: 'Great Vibes', cursive; /* Подключаем шрифт */
-  font-size: 64px; /* Увеличим размер */
+  font-family: 'Great Vibes', cursive; 
+  font-size: 64px; 
   margin: 10px 0;
-  color: #ffffff; /* Белый цвет */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
-  letter-spacing: 4px; /* Добавим немного расстояния между буквами */
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  letter-spacing: 4px; 
 }
 
 .quote {
-  font-style: italic; /* Курсив */
-  font-size: 24px; /* Увеличим размер */
-  color: #f0e6fa; /* Светло-сиреневый с розовым оттенком */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Легкая тень */
-  margin-top: 10px; /* Отступ сверху */
+  font-style: italic; 
+  font-size: 24px; 
+  color: #f0e6fa; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+  margin-top: 10px; 
 }
 
-/* Секции */
 section {
   padding: 20px;
   margin: 20px;
@@ -228,31 +224,31 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Секция "Обо мне" */
+
 #about {
-  text-align: center; /* Выравниваем текст по центру */
-  padding: 40px 20px; /* Добавим отступы */
-  background-color: white; /* Белый фон */
-  border-radius: 20px; /* Закруглим углы */
-  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3); /* Тень с фиолетовым оттенком */
-  margin: 20px; /* Отступы вокруг секции */
-  border: 4px solid transparent; /* Прозрачная рамка */
-  background-clip: padding-box; /* Чтобы градиент не выходил за рамку */
+  text-align: center; 
+  padding: 40px 20px; 
+  background-color: white; 
+  border-radius: 20px; 
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.3); 
+  margin: 20px; 
+  border: 4px solid transparent; 
+  background-clip: padding-box; 
   position: relative;
 }
 
 #about h2 {
-  font-size: 36px; /* Увеличим размер заголовка */
-  color: #8a2be2; /* Фиолетовый цвет */
-  margin-bottom: 20px; /* Отступ снизу */
+  font-size: 36px; 
+  color: #8a2be2; 
+  margin-bottom: 20px; 
 }
 
 #about p {
-  font-size: 20px; /* Увеличим размер текста */
-  color: #333; /* Темно-серый цвет */
-  line-height: 1.6; /* Увеличим межстрочный интервал */
-  max-width: 1200px; /* Ещё больше увеличим ширину текста */
-  margin: 0 auto; /* Центрируем текст */
+  font-size: 20px; 
+  color: #333; 
+  line-height: 1.6; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 #about::before {
@@ -262,18 +258,18 @@ section {
   left: -4px;
   right: -4px;
   bottom: -4px;
-  background: linear-gradient(45deg, #8a2be2, #ff6f61); /* Градиентная рамка */
-  border-radius: 24px; /* Закругление углов */
+  background: linear-gradient(45deg, #8a2be2, #ff6f61); 
+  border-radius: 24px; 
   z-index: -1;
 }
 
 h2 {
-  color: #8a2be2; /* Фиолетовый */
+  color: #8a2be2; 
 }
 
 #show-portfolio {
-  background-color: #8a2be2; /* Фиолетовый цвет */
-  color: white; /* Белый текст */
+  background-color: #8a2be2; 
+  color: white; 
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -283,46 +279,45 @@ h2 {
 }
 
 #show-portfolio:hover {
-  background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
+  background-color: #7b1fa2; 
 }
 
 
 /* Галерея */
 #portfolio {
-  text-align: center; /* Выравниваем текст по центру */
-  padding: 40px 20px; /* Добавим отступы */
-  background-color: white; /* Белый фон */
-  border-radius: 10px; /* Закруглим углы */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
-  margin: 20px; /* Отступы вокруг секции */
+  text-align: center; 
+  padding: 40px 20px; 
+  background-color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin: 20px; 
 }
 
 #portfolio h2 {
-  font-size: 36px; /* Увеличим размер заголовка */
-  color: #8a2be2; /* Фиолетовый цвет */
-  margin-bottom: 20px; /* Отступ снизу */
+  font-size: 36px; 
+  color: #8a2be2; 
+  margin-bottom: 20px; 
 }
 
 
 .gallery {
-  display: none; /* Скрываем галерею по умолчанию */
-  flex-wrap: wrap; /* Перенос фотографий на новую строку */
-  justify-content: center; /* Центрируем фотографии */
-  gap: 20px; /* Расстояние между фотографиями */
+  display: none; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .gallery img {
   width: 100%;
-  max-width: 300px; /* Ограничим ширину фотографий */
-  border-radius: 10px; /* Закруглим углы */
-  transition: transform 0.3s ease; /* Анимация при наведении */
+  max-width: 300px; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-  transform: scale(1.05); /* Увеличиваем фотографию при наведении */
+  transform: scale(1.05);
 }
 
-/* Секция "Навыки" */
 #skills {
     padding: 40px 20px;
     background-color: white;
@@ -333,52 +328,52 @@ h2 {
 
 .skills-container {
     display: flex;
-    align-items: center; /* Выравниваем фото и текст по центру по вертикали */
-    gap: 40px; /* Расстояние между фото и текстом */
-    max-width: 1200px; /* Ограничим ширину контейнера */
-    margin: 0 auto; /* Центрируем контейнер */
+    align-items: center;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .skills-image {
-    flex: 1; /* Фото занимает 1 часть пространства */
-    text-align: center; /* Центрируем фото */
+    flex: 1; 
+    text-align: center;
 }
 
 .skills-image img {
     width: 100%;
-    max-width: 400px; /* Ограничим ширину фото */
-    border-radius: 10px; /* Закруглим углы */
-    border: 4px solid black; /* Черная рамка */
-    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3); /* Легкая тень */
+    max-width: 400px; 
+    border-radius: 10px; 
+    border: 4px solid black; 
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
 }
 
 .skills-list {
-    flex: 2; /* Текст занимает 2 части пространства */
-    max-width: 600px; /* Уменьшаем ширину текста */
+    flex: 2; 
+    max-width: 600px; 
 }
 
-/* Центрируем заголовок "Навыки" */
+
 .skills-list h2 {
     font-size: 36px;
-    color: #8a2be2; /* Фиолетовый цвет */
+    color: #8a2be2;
     margin-bottom: 20px;
-    text-align: center; /* Центрируем заголовок */
+    text-align: center;
 }
 
 .skills-list ul {
-    list-style: none; /* Убираем стандартные маркеры списка */
+    list-style: none;
     padding: 0;
 }
 
 .skills-list li {
-    margin-bottom: 30px; /* Увеличиваем расстояние между навыками */
+    margin-bottom: 30px;
 }
 
 .skills-list li strong {
-  display: block; /* Делаем заголовок блочным элементом */
-  margin-bottom: 10px; /* Отступ между заголовком и текстом */
-  font-size: 1.2em; /* Увеличиваем размер заголовка */
-  text-align: center; /* Центрируем текст */
+  display: block; 
+  margin-bottom: 10px; 
+  font-size: 1.2em; 
+  text-align: center; 
 }
 
 .skills-list p {
@@ -387,118 +382,116 @@ h2 {
     margin-top: 5px;
 }
 
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 768px) {
     .skills-container {
-        flex-direction: column; /* Меняем направление на вертикальное */
-        gap: 20px; /* Уменьшаем расстояние между элементами */
+        flex-direction: column; 
+        gap: 20px;
     }
 
     .skills-image img {
-        max-width: 100%; /* Фото занимает всю ширину контейнера */
+        max-width: 100%; 
     }
 
     .skills-list {
-        max-width: 100%; /* Текст занимает всю ширину контейнера */
+        max-width: 100%; 
     }
 
     .skills-list h2 {
-        font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+        font-size: 28px; 
     }
 
     .skills-list li strong {
-        font-size: 1.1em; /* Уменьшаем размер заголовков навыков */
+        font-size: 1.1em; 
     }
 
     .skills-list p {
-        font-size: 14px; /* Уменьшаем размер текста для мобильных */
+        font-size: 14px; 
     }
 }
 
-/* Секция "Прайс" */
 #services {
   padding: 40px 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  text-align: center; /* Центрируем заголовок и содержимое */
-  overflow: hidden; /* Скрываем всё, что выходит за пределы секции */
+  text-align: center;
+  overflow: hidden; 
 }
 
 #services h2 {
   font-size: 36px;
-  color: #8a2be2; /* Фиолетовый цвет */
+  color: #8a2be2; 
   margin-bottom: 40px;
 }
 
 .price-list {
   display: flex;
-  flex-wrap: wrap; /* Переносим карточки на новую строку, если не хватает места */
-  justify-content: center; /* Центрируем карточки */
-  gap: 20px; /* Расстояние между карточками */
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px; 
 }
 
 .price-item {
-  background-color: #f9f9f9; /* Светлый фон для карточки */
-  border-radius: 10px; /* Закругленные углы */
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
   padding: 20px;
-  width: 250px; /* Фиксированная ширина карточки */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .price-item:hover {
-  transform: translateY(-5px); /* Поднимаем карточку при наведении */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .price-item h3 {
   font-size: 24px;
-  color: #333; /* Темно-серый цвет */
+  color: #333; 
   margin-bottom: 10px;
 }
 
 .price-item .price {
   font-size: 20px;
-  color: #8a2be2; /* Фиолетовый цвет */
+  color: #8a2be2; 
   font-weight: bold;
   margin: 0;
 }
 
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 768px) {
   #services {
-    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
-    margin: 10px; /* Уменьшаем внешние отступы */
+    padding: 20px 10px;
+    margin: 10px; 
   }
 
   .price-list {
-    flex-direction: column; /* Карточки идут одна под другой */
-    align-items: center; /* Центрируем карточки */
-    gap: 15px; /* Уменьшаем расстояние между карточками */
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px; 
   }
 
   .price-item {
-    width: 80%; /* Карточки занимают всю ширину */
-    max-width: 300px; /* Ограничиваем максимальную ширину */
-    padding: 15px; /* Уменьшаем отступы внутри карточки */
+    width: 80%; 
+    max-width: 300px; 
+    padding: 15px;
   }
 
   #services h2 {
-    font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+    font-size: 28px; 
   }
 
   .price-item h3 {
-    font-size: 20px; /* Уменьшаем размер заголовка услуги */
+    font-size: 20px; 
   }
 
   .price-item .price {
-    font-size: 18px; /* Уменьшаем размер цены */
+    font-size: 18px;
   }
 }
 
-/* Секция "Сертификаты" */
 #certificates {
   padding: 40px 20px;
   background-color: white;
@@ -577,24 +570,24 @@ h2 {
   }
 }
 
-/* Секция "Отзывы" */
+
 #reviews {
   padding: 40px 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  text-align: center; /* Центрируем заголовок и содержимое */
+  text-align: center; 
 }
 
 #reviews h2 {
   font-size: 36px;
-  color: #8a2be2; /* Фиолетовый цвет */
+  color: #8a2be2;
   margin-bottom: 20px;
 }
 
 #show-reviews {
-  background-color: #8a2be2; /* Фиолетовый цвет */
+  background-color: #8a2be2;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -605,7 +598,7 @@ h2 {
 }
 
 #show-reviews:hover {
-  background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
+  background-color: #7b1fa2; 
   transform: translateY(-3px);
 }
 
@@ -614,58 +607,55 @@ h2 {
 }
 
 .review-list {
-  display: none; /* Скрываем отзывы по умолчанию */
-  list-style: none; /* Убираем маркеры списка */
+  display: none; 
+  list-style: none; 
   padding: 0;
-  flex-wrap: wrap; /* Переносим отзывы на новую строку, если не хватает места */
-  justify-content: center; /* Центрируем отзывы */
-  gap: 20px; /* Расстояние между отзывами */
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .review-card {
-  background-color: #f9f9f9; /* Светлый фон для карточки */
+  background-color: #f9f9f9; 
   border-radius: 10px;
-  padding: 10px; /* Уменьшаем отступы внутри карточки */
-  width: 300px; /* Ширина карточки */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  padding: 10px; 
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-card:hover {
-  transform: translateY(-5px); /* Поднимаем карточку при наведении */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .review-image {
-  width: 100%; /* Фото занимает всю ширину карточки */
-  border-radius: 10px; /* Закругленные углы */
-  display: block; /* Убираем лишние отступы */
+  width: 100%;
+  border-radius: 10px;
+  display: block; 
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   #reviews {
-    padding: 20px 10px; /* Уменьшаем отступы внутри секции */
-    margin: 10px; /* Уменьшаем внешние отступы */
+    padding: 20px 10px;
+    margin: 10px;
   }
 
   .review-card {
-    width: 100%; /* Карточки занимают всю ширину */
-    max-width: 300px; /* Ограничиваем максимальную ширину */
-    padding: 5px; /* Уменьшаем отступы внутри карточки */
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
   }
 
   #reviews h2 {
-    font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+    font-size: 28px;
   }
 
   #show-reviews {
-    font-size: 16px; /* Уменьшаем размер текста кнопки */
+    font-size: 16px;
   }
 }
-
-/* Секция "Контакты" */
 
 #contacts {
   padding: 40px 20px;
@@ -684,9 +674,9 @@ h2 {
 
 .contact-buttons {
   display: flex;
-  flex-wrap: wrap; /* Переносим кнопки на новую строку, если не хватает места */
-  justify-content: center; /* Центрируем кнопки */
-  gap: 20px; /* Расстояние между кнопками */
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .contact-button {
@@ -701,11 +691,10 @@ h2 {
 }
 
 .contact-button:hover {
-  transform: translateY(-5px); /* Поднимаем кнопку при наведении */
-  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3); /* Увеличиваем тень */
+  transform: translateY(-5px); 
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3); 
 }
 
-/* Анимация для кнопок */
 .contact-button, #show-portfolio, #show-reviews {
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -718,8 +707,6 @@ h2 {
 .contact-button:active, #show-portfolio:active, #show-reviews:active {
   transform: translateY(0);
 }
-
-/* Цвета для кнопок */
 
 .contact-buttons {
   display: flex;
@@ -789,33 +776,33 @@ h2 {
 
 @media (max-width: 768px) {
   header h1 {
-    font-size: 48px; /* Уменьшим размер заголовка для мобильных */
+    font-size: 48px; 
   }
 
   .quote {
-    font-size: 18px; /* Уменьшим размер цитаты */
+    font-size: 18px;
   }
 
   .profile-photo {
-    width: 150px; /* Уменьшим размер фото */
+    width: 150px;
     height: 150px;
   }
 
   section {
-    padding: 15px; /* Уменьшим отступы внутри секций */
-    margin: 10px; /* Уменьшим внешние отступы */
+    padding: 15px; 
+    margin: 10px;
   }
 
   .gallery img {
-    max-width: 100%; /* Фото занимают всю ширину */
+    max-width: 100%;
   }
 
   .contact-buttons {
-    flex-direction: column; /* Кнопки идут одна под другой */
+    flex-direction: column; 
   }
 
   .contact-button {
-    width: 80%; /* Кнопки занимают всю ширину */
-    margin-bottom: 10px; /* Отступ между кнопками */
+    width: 80%; 
+    margin-bottom: 10px; 
   }
 }
